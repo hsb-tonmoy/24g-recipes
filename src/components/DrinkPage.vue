@@ -10,7 +10,7 @@ defineEmits(['update:showModal'])
     <h2 class="font-secondary text-7xl mb-10 leading-normal">
       {{ drink.name }}
     </h2>
-    <div class="xl:overflow-y-auto xl:flex-grow xl:h-80">
+    <div class="md:overflow-y-auto md:flex-grow xl:h-80">
       <h6 class="font-bold text-xl mb-4">Ingredients</h6>
       <ul
         class="flex items-center"

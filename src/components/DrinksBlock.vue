@@ -35,7 +35,7 @@ const openModal = (drink: Drink) => {
       <img src="../assets/exit_icon.svg" alt="Exit" />
     </button>
     <!-- Modal Content -->
-    <div class="w-full max-w-screen-sm xl:max-w-screen-md h-3/4 md:h-auto mx-6 md:mx-0 z-50">
+    <div class="w-full max-w-screen-sm xl:max-w-screen-md h-3/4 xl:h-auto px-6 xl:px-0 z-50">
       <DrinkPage v-model:showModal="showModal" :drink="selectedDrink" />
     </div>
     <!-- Background Overlay -->

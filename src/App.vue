@@ -41,7 +41,7 @@ onMounted(async () => {
       <h1 class="text-white text-center font-secondary text-7xl mb-10 leading-normal">
         Welcome Holiday Text
       </h1>
-      <p class="text-white leading-loose text-center md:max-w-xl">
+      <p class="text-white leading-relaxed text-center text-xl md:max-w-2xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus odio ac ante
         malesuada feugiat. Mauris pretium, nulla ac imperdiet suscipit, nibh enim pellentesque
         sapien, ut hendrerit dolor sapien gravida lacus.
