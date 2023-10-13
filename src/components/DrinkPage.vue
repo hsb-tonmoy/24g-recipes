@@ -7,7 +7,7 @@ defineProps<{ drink: Drink }>()
 
 <template>
   <div class="bg-[#1f1f1f] flex flex-col p-10 rounded-2xl overflow-y-auto text-white h-full">
-    <h2 class="font-secondary text-7xl mb-10 leading-normal">
+    <h2 class="font-secondary text-5xl md:text-7xl mb-10 leading-normal">
       {{ drink.name }}
     </h2>
     <div class="md:overflow-y-auto md:flex-grow xl:h-80">
