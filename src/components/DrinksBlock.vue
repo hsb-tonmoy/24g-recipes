@@ -2,8 +2,6 @@
 import { type Drink } from '../types/drinks'
 
 const props = defineProps<{ drinks: Drink[] }>()
-
-console.log(props.drinks)
 </script>
 
 <template>
