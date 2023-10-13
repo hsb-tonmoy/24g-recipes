@@ -8,9 +8,9 @@ export default {
         secondary: ['Writable Story', 'sans-serif']
       },
       backgroundImage: {
-        desktop: "url('/src/images/bg_desktop.png')",
-        tablet: "url('/src/images/bg_tablet.png')",
-        mobile: "url('/src/images/bg_mobile.png')"
+        desktop: "url('/src/assets/bg_desktop.png')",
+        tablet: "url('/src/assets/bg_tablet.png')",
+        mobile: "url('/src/assets/bg_mobile.png')"
       }
     }
   },
