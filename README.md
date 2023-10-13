@@ -1,52 +1,17 @@
 # 24g-recipes
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my rendition of the 24G Recipe App Test Project. This is my first time using Vue.js 3 to build an SPA (singe page application). I used the Vite default TypeScript template to get started. Added TailwindCSS because of its handy utility classes. This was a great learning experience for me as I have taught myself the fundamentals of Vue's reactivity, the built-in directives, and the Composition API.
 
-## Recommended IDE Setup
+Name: Hasibuzzaman Tonmoy  
+Date of Submission: 10/13/2023  
+Hours Spent: 4 hours
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Link to Self-hosted App: https://24g-recipes.vercel.app/
 
-## Type Support for `.vue` Imports in TS
+## Instructions for running the app locally
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Clone the repository
+- `cd` into the cloned folder
+- Run `npm install`
+- Run `npm run dev`
+- Open `http://localhost:3000` in your browser

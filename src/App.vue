@@ -3,25 +3,27 @@ import { ref, onMounted } from 'vue'
 import { type Drink } from './types/drinks'
 import DrinksBlock from './components/DrinksBlock.vue'
 
+// Define reactive variables for loading, data, and error
 const loading = ref<boolean>(true)
 const data = ref<Drink[]>([])
 const error = ref<string | null>(null)
 
 const url: string = 'https://assets.24g.com/public/2022-frontend-test-project/drinks.json'
 
+// Fetch the drinks data when the component is mounted
 onMounted(async () => {
-  loading.value = true
+  loading.value = true // Set loading state to true while fetching data
   try {
     const response = await fetch(url)
     if (!response.ok) {
       throw new Error('Error fetching list of recipes')
     }
     const fetchdData = await response.json()
-    data.value = fetchdData.drinks
+    data.value = fetchdData.drinks // Set the data to the drinks array
   } catch (err) {
     error.value = (err as Error).message
   } finally {
-    loading.value = false
+    loading.value = false // Set loading state to false after fetching data
   }
 })
 </script>

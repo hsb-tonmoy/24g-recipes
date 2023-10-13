@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { type Drink } from '../types/drinks'
 
-defineProps<{ drink: Drink; showModal: boolean }>()
-defineEmits(['update:showModal'])
+// Define props for the component
+defineProps<{ drink: Drink }>()
 </script>
 
 <template>
@@ -12,18 +12,26 @@ defineEmits(['update:showModal'])
     </h2>
     <div class="md:overflow-y-auto md:flex-grow xl:h-80">
       <h6 class="font-bold text-xl mb-4">Ingredients</h6>
-      <ul
-        class="flex items-center"
-        style="list-style-type: circle"
-        v-for="(ingredient, index) in drink.ingredients"
-        v-bind:key="index"
-      >
-        <li class="ml-4 mb-2 text-base">{{ ingredient }}</li>
+      <ul class="flex flex-col gap-2" style="list-style-type: circle">
+        <!-- Loop through the ingredients and display them in a list -->
+        <li
+          v-for="(ingredient, index) in drink.ingredients"
+          v-bind:key="index"
+          class="ml-4 text-base"
+        >
+          {{ ingredient }}
+        </li>
       </ul>
       <hr class="w-full border-[#393C3E] my-6" />
       <h6 class="font-bold text-xl mb-4">How to prepare</h6>
-      <ul class="flex items-center" v-for="(step, index) in drink.steps" v-bind:key="index">
-        <li class="inline-flex gap-3 mb-3 text-base">
+      <ul class="flex flex-col gap-3">
+        <!-- Loop through the steps and display them in a list -->
+        <li
+          v-for="(step, index) in drink.steps"
+          v-bind:key="index"
+          class="inline-flex gap-3 text-base"
+        >
+          <!-- Display the step number and description -->
           <span class="uppercase flex-shrink-0">Step {{ index + 1 }}</span> {{ step }}
         </li>
       </ul>
